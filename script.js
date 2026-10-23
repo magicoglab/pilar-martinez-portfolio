@@ -153,6 +153,32 @@ if (tilt && window.matchMedia("(pointer: fine)").matches && !reduceMotion) {
   });
 }
 
+/* ── Flip card de contacto ───────────────────────────────── */
+const flipCard = $("#flipCard");
+const flipBtn = $("#flipBtn");
+const flipWrap = $("#photoTilt");
+if (flipCard && flipWrap) {
+  const toggleFlip = () => {
+    const on = flipCard.classList.toggle("is-flipped");
+    flipWrap.classList.toggle("is-flipped", on);
+    flipCard.setAttribute("aria-pressed", String(on));
+  };
+  flipCard.addEventListener("click", (e) => {
+    if (e.target.closest("a")) return; // los links del dorso funcionan normal
+    toggleFlip();
+  });
+  flipCard.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleFlip();
+    }
+  });
+  if (flipBtn) flipBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleFlip();
+  });
+}
+
 /* ── Reveal on scroll (IntersectionObserver) ─────────────── */
 const io = new IntersectionObserver(
   (entries) => entries.forEach((en) => {

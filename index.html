@@ -103,9 +103,30 @@
         <div class="hero__visual reveal-hero">
           <div class="hero__photo-wrap" id="photoTilt">
             <div class="hero__photo-arch" aria-hidden="true"></div>
-            <div class="hero__photo">
-              <img src="assets/pilar.jpg" alt="Retrato de Pilar Martínez" />
+            <div class="hero__flip" id="flipCard" role="button" tabindex="0" aria-pressed="false" aria-label="Ver los datos de contacto de Pilar" data-hover>
+              <div class="hero__flip-inner">
+                <div class="hero__flip-front">
+                  <div class="hero__photo">
+                    <img src="assets/pilar.jpg" alt="Retrato de Pilar Martínez" />
+                  </div>
+                </div>
+                <div class="hero__flip-back">
+                  <div class="flip-contact">
+                    <span class="flip-contact__tag">Contacto directo</span>
+                    <p class="flip-contact__name">Pilar<br /><em>Martínez</em></p>
+                    <ul class="flip-contact__list">
+                      <li><span>Email</span><a href="mailto:pilar93m@gmail.com">pilar93m@gmail.com</a></li>
+                      <li><span>WhatsApp</span><a href="https://wa.me/5493413063756" target="_blank" rel="noopener">+54 9 341 306 3756</a></li>
+                      <li><span>Ubicación</span><strong>Rosario, Argentina</strong></li>
+                    </ul>
+                    <span class="flip-contact__hint">↻ Volver a la foto</span>
+                  </div>
+                </div>
+              </div>
             </div>
+            <button class="hero__flip-btn" id="flipBtn" data-hover aria-label="Ver los datos de contacto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+            </button>
             <div class="hero__photo-ring" data-hover aria-hidden="true">
               <svg viewBox="0 0 200 200" class="rotating-text">
                 <defs><path id="circlePath" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"/></defs>
@@ -115,11 +136,13 @@
                 </text>
               </svg>
             </div>
-            <div class="hero__badge hero__badge--exp" aria-hidden="true">
-              <strong>8+</strong><span>años de<br/>experiencia</span>
-            </div>
-            <div class="hero__badge hero__badge--role" aria-hidden="true">
-              <span class="pulse-dot pulse-dot--accent"></span><span>La Segunda Seguros</span>
+            <div class="hero__badges" aria-hidden="true">
+              <div class="hero__badge hero__badge--exp">
+                <strong>8+</strong><span>años de<br/>experiencia</span>
+              </div>
+              <div class="hero__badge hero__badge--role">
+                <span class="pulse-dot pulse-dot--accent"></span><span>La Segunda Seguros</span>
+              </div>
             </div>
           </div>
         </div>
