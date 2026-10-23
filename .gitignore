@@ -9,3 +9,5 @@ node_modules/
 # Archivos fuente (no van al repo)
 FotoPerfil.jpg
 Pilar_Martinez_CV_2026 (2).pdf
+
+.vercel

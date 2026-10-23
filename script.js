@@ -45,6 +45,30 @@ if (statement) {
     .join(" ");
 }
 
+/* ── Auto-ajuste del sello circular ──────────────────────── */
+const ringPath = $("#circlePath");
+const ringText = $("#ringTextPath");
+if (ringPath && ringText) {
+  const fitRingText = () => {
+    try {
+      const circumference = ringPath.getTotalLength();
+      const chars = ringText.textContent.trim().length;
+      const fs = parseFloat(getComputedStyle(ringText).fontSize) || 15.5;
+      let ls = 0.2; // em
+      for (let i = 0; i < 4; i++) {
+        ringText.style.letterSpacing = `${ls}em`;
+        const delta = circumference - ringText.getComputedTextLength();
+        ls = Math.max(-0.04, ls + delta / chars / fs);
+      }
+      ringText.style.letterSpacing = `${ls}em`;
+    } catch (e) {
+      /* fallback: se mantiene el espaciado base del CSS */
+    }
+  };
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitRingText);
+  else setTimeout(fitRingText, 600);
+}
+
 /* ── Preloader ───────────────────────────────────────────── */
 const preloader = $("#preloader");
 const preCount = $("#preloaderCount");
