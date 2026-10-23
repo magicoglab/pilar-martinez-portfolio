@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pilar Martínez — Comunicación &amp; Publicidad</title>
+  <meta name="description" content="Pilar Martínez — Analista de Comunicación y Publicidad. Comunicación digital, estrategia de contenidos, UX Writing y canales directos. Rosario, Argentina." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════ PRELOADER ══════════ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__label">Portfolio — 2026</span>
+      <span class="preloader__name">Pilar <em>Martínez</em></span>
+      <span class="preloader__count" id="preloaderCount">0</span>
+    </div>
+    <div class="preloader__curtain"></div>
+  </div>
+
+  <!-- ══════════ CURSOR ══════════ -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ══════════ PROGRESS ══════════ -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo" data-hover>P<em>M</em><span>®</span></a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="#sobre-mi" data-hover>Sobre mí</a>
+      <a href="#experiencia" data-hover>Experiencia</a>
+      <a href="#competencias" data-hover>Competencias</a>
+      <a href="#formacion" data-hover>Formación</a>
+      <a href="#contacto" class="nav__cta" data-hover>Contacto</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" data-hover aria-label="Cambiar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.3 4.3l1.7 1.7M18 18l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.3 19.7L6 18M18 6l1.7-1.7"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.4 14.2A8.5 8.5 0 0 1 9.8 3.6a8.5 8.5 0 1 0 10.6 10.6z"/></svg>
+      </button>
+      <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════ MOBILE MENU ══════════ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__links">
+      <a href="#sobre-mi"><i>01</i>Sobre mí</a>
+      <a href="#experiencia"><i>02</i>Experiencia</a>
+      <a href="#competencias"><i>03</i>Competencias</a>
+      <a href="#formacion"><i>04</i>Formación</a>
+      <a href="#contacto"><i>05</i>Contacto</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="mailto:pilar93m@gmail.com">pilar93m@gmail.com</a>
+      <span>Rosario, Argentina</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-word" aria-hidden="true">Pilar</div>
+      <div class="hero__grid">
+        <div class="hero__content">
+          <p class="hero__kicker reveal-hero">
+            <span class="pulse-dot"></span>
+            Analista de Comunicación &amp; Publicidad
+          </p>
+          <h1 class="hero__name" aria-label="Pilar Martínez">
+            <span class="hero__line"><span class="split">Pilar</span></span>
+            <span class="hero__line hero__line--indent"><span class="split split--italic">Martínez</span></span>
+          </h1>
+          <p class="hero__tagline reveal-hero">
+            Estrategia, contenidos y canales directos: construyo comunicación
+            digital <em>de punta a punta</em> — del insight al envío, del dato a la idea.
+          </p>
+          <div class="hero__ctas reveal-hero">
+            <a href="#experiencia" class="btn btn--primary magnetic" data-hover><span>Ver experiencia</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a href="assets/CV_Pilar_Martinez.pdf" download class="btn btn--ghost magnetic" data-hover><span>Descargar CV</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+            </a>
+          </div>
+          <div class="hero__meta reveal-hero">
+            <span>Rosario, Argentina</span>
+            <i></i>
+            <a href="mailto:pilar93m@gmail.com" data-hover>pilar93m@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal-hero">
+          <div class="hero__photo-wrap" id="photoTilt">
+            <div class="hero__photo-arch" aria-hidden="true"></div>
+            <div class="hero__photo">
+              <img src="assets/pilar.jpg" alt="Retrato de Pilar Martínez" />
+            </div>
+            <div class="hero__photo-ring" aria-hidden="true">
+              <svg viewBox="0 0 200 200" class="rotating-text">
+                <defs><path id="circlePath" d="M 100,100 m -84,0 a 84,84 0 1,1 168,0 a 84,84 0 1,1 -168,0"/></defs>
+                <text><textPath href="#circlePath">Comunicación digital ✦ UX Writing ✦ Contenidos ✦ Paid Media ✦ </textPath></text>
+              </svg>
+            </div>
+            <div class="hero__badge hero__badge--exp" aria-hidden="true">
+              <strong>8+</strong><span>años de<br/>experiencia</span>
+            </div>
+            <div class="hero__badge hero__badge--role" aria-hidden="true">
+              <span class="pulse-dot pulse-dot--accent"></span><span>La Segunda Seguros</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#sobre-mi" class="hero__scroll" data-hover aria-label="Bajar">
+        <span>scroll</span><i></i>
+      </a>
+    </section>
+
+    <!-- ══════════ MARQUEE ══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Comunicación digital <b>✦</b> Contenidos <b>✦</b> UX Writing <b>✦</b> Canales directos <b>✦</b> Paid Media <b>✦</b> Social Media <b>✦</b>&nbsp;</span>
+        <span>Comunicación digital <b>✦</b> Contenidos <b>✦</b> UX Writing <b>✦</b> Canales directos <b>✦</b> Paid Media <b>✦</b> Social Media <b>✦</b>&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ══════════ SOBRE MÍ ══════════ -->
+    <section class="section about" id="sobre-mi">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <span class="section__label">Sobre mí</span>
+        <span class="section__rule"></span>
+      </div>
+      <div class="about__grid">
+        <h2 class="about__statement" id="statement">
+          Licenciada en Comunicación Social con experiencia en comunicación digital,
+          estrategia de contenidos, UX Writing y gestión de canales de comunicación
+          directa. Campañas de punta a punta, definición de contenidos y trabajo
+          como partner de áreas de negocio, equipos creativos y de desarrollo.
+        </h2>
+      </div>
+      <div class="stats">
+        <div class="stat reveal">
+          <span class="stat__num"><span class="counter" data-target="8">0</span>+</span>
+          <span class="stat__label">Años de experiencia</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num"><span class="counter" data-target="5">0</span></span>
+          <span class="stat__label">Roles &amp; empresas</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num"><span class="counter" data-target="5">0</span></span>
+          <span class="stat__label">Certificaciones</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num"><span class="counter" data-target="2">0</span></span>
+          <span class="stat__label">Idiomas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ EXPERIENCIA ══════════ -->
+    <section class="section experience" id="experiencia">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <span class="section__label">Experiencia profesional</span>
+        <span class="section__rule"></span>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="timeline__line" aria-hidden="true"><i id="timelineProgress"></i></div>
+
+        <article class="tl-item reveal" data-hover>
+          <div class="tl-item__dot" aria-hidden="true"></div>
+          <div class="tl-item__card">
+            <div class="tl-item__top">
+              <span class="tl-item__period tl-item__period--current">05/2024 — Actualidad</span>
+              <h3 class="tl-item__company">La Segunda Seguros</h3>
+              <p class="tl-item__role">Analista de Comunicación y Publicidad</p>
+            </div>
+            <ul class="tl-item__list">
+              <li><b>Comunicación digital y contenidos:</b> definición e implementación de UX Writing en chatbots, automatizaciones de email y contenidos web y documentales.</li>
+              <li><b>Canales directos:</b> estrategia, planificación y calendarización de campañas en Mailing, Notificaciones Push y WhatsApp.</li>
+              <li><b>L2 Recompensa:</b> responsable de la estrategia de comunicación y contenidos del programa de beneficios.</li>
+              <li><b>Campañas end-to-end:</b> análisis de requerimientos, desarrollo de contenidos, producción y ejecución.</li>
+              <li><b>Partner estratégico:</b> gestión de necesidades de comunicación de las áreas de negocio y proyectos transversales, como InnLab.</li>
+            </ul>
+            <div class="tl-item__tags"><span>UX Writing</span><span>Email</span><span>Push</span><span>WhatsApp</span></div>
+          </div>
+        </article>
+
+        <article class="tl-item reveal" data-hover>
+          <div class="tl-item__dot" aria-hidden="true"></div>
+          <div class="tl-item__card">
+            <div class="tl-item__top">
+              <span class="tl-item__period">07/2021 — 04/2024</span>
+              <h3 class="tl-item__company">Aenima Agency</h3>
+              <p class="tl-item__role">Analista de Marketing Digital</p>
+            </div>
+            <ul class="tl-item__list">
+              <li>Planificación, implementación, monitoreo y optimización de campañas integrales para clientes como <b>John Deere</b>, compañías de seguros y desarrolladores.</li>
+              <li>Gestión en <b>Google Ads</b> y <b>Meta Ads</b>, además de Twitter Ads, LinkedIn Ads y Email Marketing (Mailchimp).</li>
+              <li>Reporting, planificación de contenidos orgánicos, identificación de tendencias, gestión de redes sociales y coordinación con clientes y equipos de desarrollo.</li>
+            </ul>
+            <div class="tl-item__tags"><span>Google Ads</span><span>Meta Ads</span><span>Reporting</span></div>
+          </div>
+        </article>
+
+        <article class="tl-item reveal" data-hover>
+          <div class="tl-item__dot" aria-hidden="true"></div>
+          <div class="tl-item__card">
+            <div class="tl-item__top">
+              <span class="tl-item__period">08/2020 — 07/2021</span>
+              <h3 class="tl-item__company">Grupo SP</h3>
+              <p class="tl-item__role">Community Manager y Atención al Cliente</p>
+            </div>
+            <ul class="tl-item__list">
+              <li>Diagnóstico y estrategia de marca, desarrollo de manual de marca y gestión integral de redes sociales.</li>
+              <li>Email marketing, estrategia de leads, desarrollo de materiales de comunicación y coordinación de acciones de merchandising.</li>
+            </ul>
+            <div class="tl-item__tags"><span>Branding</span><span>Social Media</span><span>Email</span></div>
+          </div>
+        </article>
+
+        <article class="tl-item reveal" data-hover>
+          <div class="tl-item__dot" aria-hidden="true"></div>
+          <div class="tl-item__card">
+            <div class="tl-item__top">
+              <span class="tl-item__period">02/2018 — 09/2021</span>
+              <h3 class="tl-item__company">Freelance</h3>
+              <p class="tl-item__role">Planificación de Redes Sociales y Community Manager</p>
+            </div>
+            <ul class="tl-item__list">
+              <li>Desarrollo de contenidos, gestión de comunidades y campañas en Facebook e Instagram.</li>
+              <li>Clientes: <b>Deotto Furniture Store</b>, <b>Rosario Temporal</b> y <b>Marcos Cicchirillo</b> (Radio Mitre).</li>
+            </ul>
+            <div class="tl-item__tags"><span>Contenidos</span><span>Meta Ads</span><span>Community</span></div>
+          </div>
+        </article>
+
+        <article class="tl-item reveal" data-hover>
+          <div class="tl-item__dot" aria-hidden="true"></div>
+          <div class="tl-item__card">
+            <div class="tl-item__top">
+              <span class="tl-item__period">04/2019 — 07/2020</span>
+              <h3 class="tl-item__company">Ecos365.com.ar</h3>
+              <p class="tl-item__role">Periodismo y Redacción</p>
+            </div>
+            <ul class="tl-item__list">
+              <li>Redacción de noticias y contenidos SEO, con foco en economía, agro, tecnología y negocios; experiencia en periodismo de investigación local.</li>
+            </ul>
+            <div class="tl-item__tags"><span>SEO</span><span>Redacción</span><span>Periodismo</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══════════ COMPETENCIAS ══════════ -->
+    <section class="section skills" id="competencias">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <span class="section__label">Competencias</span>
+        <span class="section__rule"></span>
+      </div>
+      <div class="skills__grid">
+        <div class="skills__group reveal">
+          <h3 class="skills__title"><em>01 /</em> Estrategia &amp; Contenidos</h3>
+          <div class="chips">
+            <span class="chip" data-hover>Comunicación digital</span>
+            <span class="chip" data-hover>Estrategia de contenidos</span>
+            <span class="chip" data-hover>UX Writing</span>
+            <span class="chip" data-hover>Social Media</span>
+          </div>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="skills__title"><em>02 /</em> Canales &amp; Performance</h3>
+          <div class="chips">
+            <span class="chip" data-hover>Email Marketing</span>
+            <span class="chip" data-hover>WhatsApp &amp; Push</span>
+            <span class="chip" data-hover>Paid Media</span>
+            <span class="chip" data-hover>Meta Ads</span>
+            <span class="chip" data-hover>Google Ads</span>
+          </div>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="skills__title"><em>03 /</em> Datos &amp; Medición</h3>
+          <div class="chips">
+            <span class="chip" data-hover>Google Analytics / GA4</span>
+            <span class="chip" data-hover>Google Tag Manager</span>
+            <span class="chip" data-hover>Reporting &amp; análisis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ FORMACIÓN ══════════ -->
+    <section class="section education" id="formacion">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <span class="section__label">Formación</span>
+        <span class="section__rule"></span>
+      </div>
+      <div class="education__grid">
+        <div class="edu-card edu-card--main reveal" data-hover>
+          <span class="edu-card__kicker">Título universitario</span>
+          <h3>Licenciatura en <em>Comunicación Social</em></h3>
+          <p>Universidad Nacional de Rosario (UNR)</p>
+          <svg class="edu-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></svg>
+        </div>
+        <div class="edu-certs reveal">
+          <h3 class="edu-certs__title">Cursos &amp; certificaciones</h3>
+          <ul class="cert-list">
+            <li data-hover><div><b>Google Ads</b><span>Search, Display, Video y Apps</span></div><i>Google</i></li>
+            <li data-hover><div><b>Google Tag Manager</b><span>Gestión de etiquetas</span></div><i>Platzi</i></li>
+            <li data-hover><div><b>Google Search Ads</b><span>Campañas de búsqueda</span></div><i>Platzi</i></li>
+            <li data-hover><div><b>Embudo de ventas</b><span>Estrategia de conversión</span></div><i>Platzi</i></li>
+            <li data-hover><div><b>Publicidad Programática</b><span>Compra automatizada de medios</span></div><i>Platzi</i></li>
+          </ul>
+        </div>
+        <div class="edu-langs reveal">
+          <h3 class="edu-certs__title">Idiomas</h3>
+          <div class="lang">
+            <div class="lang__row"><b>Español</b><span>Nativo</span></div>
+            <div class="lang__bar"><i style="--lvl:100%"></i></div>
+          </div>
+          <div class="lang">
+            <div class="lang__row"><b>Inglés</b><span>Full Professional Proficiency</span></div>
+            <div class="lang__bar"><i style="--lvl:85%"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CONTACTO ══════════ -->
+    <section class="section contact" id="contacto">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <span class="section__label">Contacto</span>
+        <span class="section__rule"></span>
+      </div>
+      <div class="contact__inner">
+        <p class="contact__kicker reveal">¿Tenés un proyecto en mente?</p>
+        <a href="mailto:pilar93m@gmail.com" class="contact__big reveal" data-hover>
+          <span class="contact__big-text">Hablemos<em>.</em></span>
+          <span class="contact__big-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>
+          </span>
+        </a>
+        <div class="contact__cards">
+          <a class="contact-card reveal" href="mailto:pilar93m@gmail.com" data-hover>
+            <span class="contact-card__label">Email</span>
+            <span class="contact-card__value">pilar93m@gmail.com</span>
+          </a>
+          <a class="contact-card reveal" href="https://wa.me/5493413063756" target="_blank" rel="noopener" data-hover>
+            <span class="contact-card__label">WhatsApp</span>
+            <span class="contact-card__value">+54 9 341 306 3756</span>
+          </a>
+          <div class="contact-card reveal">
+            <span class="contact-card__label">Ubicación</span>
+            <span class="contact-card__value">Rosario, Argentina</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <span>© 2026 Pilar Martínez</span>
+    <span class="footer__mid">Diseñado &amp; desarrollado con <i>✦</i> en Rosario</span>
+    <button class="footer__top" id="toTop" data-hover aria-label="Volver arriba">
+      Arriba
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+node_modules/
+.vercel
+
+# Archivos fuente (no van al repo)
+FotoPerfil.jpg
+Pilar_Martinez_CV_2026 (2).pdf
